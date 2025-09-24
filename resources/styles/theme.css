@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Bricolage Grotesque", sans-serif;
+    color: rgb(56, 56, 56);
+    transition: 0.2s;
+}
+p, .bullet-point{
+    font-size: 15pt !important;
+}
+.bullet-case{
+    justify-self: center;
+}
+.highlight{
+    color: rgb(119, 119, 119);
+}
+h1{
+    font-weight: bolder;
+    font-size: 60pt;
+    text-align: center;
+}
+h2{
+    font-size: 40pt;
+    font-weight: 700;
+    text-align: center;
+}
+.btn{
+    padding: 10px 10px;
+    margin: auto 10px;
+}
+#bellah-logo{
+    width: 150px;
+}
+.head, .navbar{
+    padding: 20px 50px;
+}
+.nav-item, .nav-link{
+    color: rgb(56, 56, 56);
+}
+.boss-nav{
+    color: blue !important;
+}
+main{
+    padding: 30px 200px;
+}
+.home-hero{
+    padding: 100px 100px;
+}
+#hero-link{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+#sub-text{
+    text-align: center;
+}
+.pitch-opt{
+    background-color: rgb(56, 56, 56);
+    border-radius: 20px;
+    color: white;
+    padding: 70px 50px;
+}
+.bullet-point, .bullet-case{
+    color: white;
+    text-align: left;
+    line-height: 30px;
+}
+#yt{
+    border-radius: 10px;
+}
+#word-head{
+    color: aqua;
+}
+.why-we-exist{
+    margin: 20px auto;
+    padding: 100px 50px;
+}
+.topic{
+    margin: 20px auto;
+    text-align: center;
+    padding: 30px 10px;
+    font-style: italic;
+}
+.service{
+    padding: 20px 10px;
+}
+.icon-font > i{
+    font-size: 52pt;
+    text-align: center;
+    margin: 10px 20px;
+    align-items: center;
+}
+.sect{
+    margin: 30px 0px;
+}
+.investors{
+    margin: 30px 0px !important;
+}
+.final-cta{
+    padding: 100px 50px;
+    border-radius: 20px;
+    color: aliceblue;
+    background: #00008B;
+background: -webkit-linear-gradient(178deg, rgba(0, 0, 139, 1) 0%, rgba(1, 1, 69, 1) 100%);
+background: -moz-linear-gradient(178deg, rgba(0, 0, 139, 1) 0%, rgba(1, 1, 69, 1) 100%);
+background: linear-gradient(178deg, rgba(0, 0, 139, 1) 0%, rgba(1, 1, 69, 1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00008B", endColorstr="#010145", GradientType=0);
+}
+.final-cta > h3{
+    color: aliceblue;
+}
+.first-footer{
+    padding: 60px 100px;
+    background: #00008b17;
+}
+.last-footer {
+    padding: 70px auto !important;
+    background: #f0f0ff;
+    font-size: medium;
+    color: #000033; /* Light mode text color */
+}
+.main-footer{
+    padding: 0px;
+}
+.site-sub{
+    font-size: medium !important;
+}
+.footer-col > p{
+    font-size:medium !important;
+}
+.footer-col > p:first-child{
+    color: #00ccff;
+}
+
+/* Dark Mode Base */
+body.dark-mode {
+    background-color: #000033 !important;
+    color: #ccccff !important;
+}
+/* Dark mode footer */
+.dark-mode .last-footer {
+    background: #000033;  /* Your dark mode background */
+    color: #f0f0ff;       /* Light text for contrast */
+}
+
+.dark-mode .last-footer .site-sub {
+    color: #f0f0ff; /* Ensures subtext also changes */
+}
+/* Headings */
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+    color: #ffffff !important;
+}
+
+body.dark-mode p,
+body.dark-mode strong,
+body.dark-mode i{
+    color: #ffffff;
+}
+/* Links */
+body.dark-mode a {
+    color: #00ccff !important;
+}
+body.dark-mode a:hover {
+    color: #66e0ff !important;
+}
+
+/* Buttons */
+body.dark-mode .btn {
+    background-color: #00ccff;
+    color: #000033 !important;
+    border: none;
+}
+body.dark-mode .btn:hover {
+    background-color: #66e0ff;
+    color: #000033;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+    background-color: #000033 !important;
+}
+body.dark-mode .navbar .nav-link {
+    color: #ccccff !important;
+}
+body.dark-mode .navbar .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* ==== Sticky Dark Mode Toggle Button ==== */
+.theme-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #010164;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    z-index: 9999;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.theme-btn:hover {
+    background-color: #420168;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px){
+    h1{
+    font-weight: bolder;
+    font-size: 35pt;
+    text-align: center;
+    line-height: 35pt;
+}
+p, .bullet-point{
+    font-size: 12pt !important;
+}
+h2{
+    font-size: 20pt;
+    font-weight: 700;
+    text-align: center;
+}
+    main{
+    padding: 20px 10px;
+    display: block;
+    overflow: hidden;
+}
+.home-hero{
+    padding: 40px 15px;
+}  
+    .head, .navbar{
+    padding: 10px 10px;
+}
+.head{
+    border-bottom: #00008b3b solid 1px;
+}
+.navbar-toggler{
+    color: #00008B !important;
+}
+.navbar-toggler-icon{
+    color: #00008B;
+}
+.btn{
+    padding: 10px 10px;
+    margin: 5px 10px;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}
+}
