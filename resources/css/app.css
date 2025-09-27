@@ -32,3 +32,9 @@
   /* small visual helpers */
   header.backdrop { background-color: rgba(255,255,255,.88); backdrop-filter: blur(6px); }
   html.dark header.backdrop { background-color: rgba(17,24,39,.86); }
+
+@media (max-width: 480px){
+  #her{
+    margin: 20px auto
+  }
+}

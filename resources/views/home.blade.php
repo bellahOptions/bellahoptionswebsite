@@ -36,16 +36,15 @@
     <div class="overflow-hidden">
       <div class="flex items-center space-x-12 md:space-x-20 animate-scroll">
         <!-- Duplicate logos twice for seamless loop -->
-        <img src="/logos/logo1.png" class="h-12" alt="Stepwise Design Lab" />
-        <img src="/logos/logo2.png" class="h-12" alt="BOSS" />
-        <img src="/logos/logo3.png" class="h-12" alt="Wingram" />
-        <img src="/logos/logo4.png" class="h-12" alt="Reup" />
-        <img src="/logos/logo5.png" class="h-12" alt="workhq" />
-        <img src="/logos/logo1.png" class="h-12" alt="Stepwise Design Lab" />
-        <img src="/logos/logo2.png" class="h-12" alt="BOSS" />
-        <img src="/logos/logo3.png" class="h-12" alt="Wingram" />
-        <img src="/logos/logo4.png" class="h-12" alt="Reup" />
-        <img src="/logos/logo5.png" class="h-12" alt="workhq" />
+        <img src="{{ asset('images/stepwise.svg') }}" class="h-12" alt="Stepwise Design Lab" />
+        <img src="{{ asset('images/reup.svg') }}" class="h-12" alt="Reup" />
+        <img src="{{ asset('images/wingram.svg') }}" class="h-12" alt="Wingram" />
+        <img src="{{ asset('images/stepwise.svg') }}" class="h-12" alt="Stepwise Design Lab" />
+        <img src="{{ asset('images/reup.svg') }}" class="h-12" alt="Reup" />
+        <img src="{{ asset('images/wingram.svg') }}" class="h-12" alt="Wingram" />
+        <img src="{{ asset('images/stepwise.svg') }}" class="h-12" alt="Stepwise Design Lab" />
+        <img src="{{ asset('images/reup.svg') }}" class="h-12" alt="Reup" />
+        <img src="{{ asset('images/wingram.svg') }}" class="h-12" alt="Wingram" />
       </div>
     </div>
   </section>
