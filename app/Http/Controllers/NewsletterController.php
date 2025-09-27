@@ -14,7 +14,7 @@ class NewsletterController extends Controller
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255'],
         ]);
 
-        $user = Newsletter::create([
+    $user = Newsletter::create([
     'name' => $request->name,
     'email' => $request->email,
 ]);

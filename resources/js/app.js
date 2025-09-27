@@ -49,5 +49,11 @@ Alpine.start();
     })
     $('mobile-menu').mouseleave(function(){
       $('#mobile-menu').hide();
-    })
+    });
+    $('#boss-btn').click(function(){
+      alert('Hello, We are still building boss, please check back later.');
+    });
+    $('#boss-bn').click(function(){
+      alert('Hello, We are still building boss, please check back later.');
+    });
   })

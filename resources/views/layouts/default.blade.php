@@ -7,14 +7,7 @@
     <meta name="description"
         content="Bellah Options is a creative tech startup helping African businesses with branding, graphic design, social media management, and custom websites to scale their digital presence.">
     <meta name="keywords"
-        content="branding agency Africa, creative tech startup, graphic design services, social media management Nigeria, Bellah Options, affordable website design">
-        <!-- put this BEFORE the Tailwind CDN script -->
-<script>
-  tailwind = window.tailwind || {};
-  tailwind.config = {
-    darkMode: 'class'
-  }
-</script>
+        content="branding agency in ogun state Nigeria, branding agency in Africa, creative tech startup, graphic design services, social media management in Nigeria, Bellah Options, affordable website design">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -49,34 +42,34 @@
 
 <body class="font-sans">
   <header class="w-full">
-  <div class="backdrop shadow-md">
+  <div class="py-4 ">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
 
         <!-- logo -->
-        <a href="/welcome" class="flex items-center gap-3">
-          <img id="bellah-logo" src="{{ asset('images/logo-06.svg')}}" alt="Bellah Options" class="w-36 fade-in-left delay-100">
+        <a href="{{ route('home') }}" class="flex items-center gap-3">
+          <img id="bellah-logo" src="{{ asset('images/logo-06.svg')}}" alt="Bellah Options" class="fade-in-left delay-100">
         </a>
 
         <!-- desktop nav -->
         <nav class="hidden md:flex items-center space-x-6">          
           <a href="{{ route('about')}}" class="text-gray-700 hover:text-indigo-600 transition fade-in-up delay-300">About</a>
 
-          <!-- services dropdown (simple link here; implement dropdown if needed) -->
           <a href="{{ route('services')}}" class="text-gray-700 hover:text-indigo-600 transition fade-in-up delay-400">Services</a>
 
           <a href="{{ route('careers')}}" class="text-gray-700 hover:text-indigo-600 transition fade-in-up delay-500">Careers</a>
-          <a href="boss.bellahoptions.com" class="text-indigo-700 font-semibold animate-pulse fade-in-up delay-600">BOSS</a>
+          <a href="#" id="boss-btn" class="font-semibold animate-pulse fade-in-up delay-600" style="color: #000845">BOSS</a>
+          <a href="{{ route('contact')}}" class="text-gray-700 hover:text-indigo-600 transition fade-in-up delay-400">Contact Us</a>
         </nav>
 
         <!-- right controls -->
         <div class="flex items-center gap-3">
-          <a href="{{ route('login')}}" class="hidden md:inline-block px-3 py-1 rounded-md border border-indigo-600 text-indigo-600 fade-in-up delay-500">Login</a>
-          <a href="{{ route('register')}}" class="hidden md:inline-block px-3 py-1 rounded-md bg-indigo-600 text-white shadow-sm hover:brightness-95 transform transition fade-in-up delay-600">Sign Up</a>
+          <a href="{{ route('login')}}" class="hidden md:inline-block px-3 py-1 rounded-md fade-in-up delay-500" style="border: #000845 solid 1px; color: #000845">Login</a>
+          <a href="{{ route('register')}}" class="hidden md:inline-block px-3 py-1 rounded-md text-white shadow-sm hover:brightness-95 transform transition fade-in-up delay-600" style="background: #000845">Sign Up</a>
 
 
           <!-- mobile menu button -->
-          <button id="menu-toggle" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition" aria-controls="mobile-menu" aria-expanded="false">
+          <button id="menu-toggle" class="md:hidden bg-bellah p-2 rounded-md text-gray-700 hover:bg-gray-100 transition" aria-controls="mobile-menu" aria-expanded="false">
             <!-- open -->
             <svg id="menu-open" class="h-6 w-6 block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -94,10 +87,11 @@
     <!-- mobile menu -->
     <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-gray-100">
       <div class="px-4 py-3 space-y-2">
-        <a href="index.php" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-100">Home</a>
-        <a href="about.php" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-200">About</a>
-        <a href="/services" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-300">Services</a>
-        <a href="careers.php" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-400">Careers</a>
+        <a href="{{ route('home') }}" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-100">Home</a>
+        <a href="{{ route('about')}}" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-200">About</a>
+        <a href="{{ route('services')}}" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-300">Services</a>
+        <a href="{{ route('careers')}}" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-400">Careers</a>
+        <a href="{{ route('contact')}}" class="block text-gray-700 hover:text-indigo-600 transition fade-in-up delay-400">Contact us</a>
 
         <div class="pt-2 border-t border-gray-100">
           <a href="{{ route('login')}}" class="block px-3 py-2 rounded-md text-indigo-600 hover:bg-indigo-50 fade-in-up delay-500">Login</a>
@@ -141,9 +135,9 @@
       <div>
         <h3 class="text-gray-900 font-semibold mb-4">Company</h3>
         <ul class="space-y-2">
-          <li><a href="about.php" class="hover:text-indigo-600 transition">About Us</a></li>
-          <li><a href="careers.php" class="hover:text-indigo-600 transition">Careers</a></li>
-          <li><a href="boss.bellahoptions.com" class="hover:text-indigo-600 transition">BOSS</a></li>
+          <li><a href="{{ route('about')}}" class="hover:text-indigo-600 transition">About Us</a></li>
+          <li><a href="{{ route('careers')}}" class="hover:text-indigo-600 transition">Careers</a></li>
+          <li><a href="#" id="boss-bn" class="hover:text-indigo-600 transition">BOSS</a></li>
         </ul>
       </div>
 
@@ -151,9 +145,9 @@
       <div>
         <h3 class="text-gray-900 font-semibold mb-4">Services</h3>
         <ul class="space-y-2">
-          <li><a href="/services#design" class="hover:text-indigo-600 transition">Design</a></li>
-          <li><a href="/services#branding" class="hover:text-indigo-600 transition">Branding</a></li>
-          <li><a href="/services#marketing" class="hover:text-indigo-600 transition">Marketing</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition">Design</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition">Branding</a></li>
+          <li><a href="#" class="hover:text-indigo-600 transition">Marketing</a></li>
         </ul>
       </div>
 
@@ -161,9 +155,12 @@
       <div>
         <h3 class="text-gray-900 font-semibold mb-4">Contact</h3>
         <ul class="space-y-2 text-sm">
-          <li>Email: <a href="mailto:info@bellahoptions.com" class="hover:text-indigo-600 transition">info@bellahoptions.com</a></li>
-          <li>Phone: <a href="tel:+2348000000000" class="hover:text-indigo-600 transition">+234 800 000 0000</a></li>
-          <li>Location: Lagos, Nigeria</li>
+          <li>Email: <a href="mailto:hello@bellahoptions.com" class="hover:text-indigo-600 transition">hello@bellahoptions.com</a></li>
+          <li class="flex items-center space-x-2"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H8.25m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0H12m4.125 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 0 1 .778-.332 48.294 48.294 0 0 0 5.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z" />
+</svg>
+ <a href="tel:+2348108671804" class="hover:text-indigo-600 transition">+234 810 8671804</a></li>
+          <li>Location: Ogun, Nigeria</li>
         </ul>
       </div>
     </div>

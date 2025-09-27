@@ -48,8 +48,10 @@
 </head>
 
 <body class="font-sans bg-blue-100 p-30 max-h-screen">
-    <div class="grid grid-cols-2 gap-4 p-10">
-        <div id="form-grid " class="bg-white p-10 rounded-lg">
+    <div class="flex flex-col md:flex-row p-5">
+        <div id="form-grid" class="bg-white px-5 py-10 rounded-lg">
+            <center>
+            <div class="mb-3"><img src="{{ asset('/images/logo-06.svg') }}" class="grayscale" width="100px" alt="Bellah Options Logo"></div></center>
             <h1 class="text-3xl mb-3 text-gray-500 font-bold text-center">Create an account with us</h1>
             <p class="my-2 text-center text-gray-500">Join our list of smart businesses, utilizing the power of compelling visuals to make a difference in thier  niche</p>
             <form method="post" action="#">
@@ -69,7 +71,7 @@
                     <label class="block text-gray-500 mb-1">Phone/Whatsapp</label>
                     <input class="block border-gray-300 rounded-lg w-full focus:ring-gray-300" type="tel" name="tel">
         </div>
-        <div class="flex flex-cols mb-3 space-x-2">
+        <div class="flex flex-col md:flex-row mb-3 space-x-2">
          <div>
                     <label class="block text-gray-500 mb-1">What do you do?</label>
                     <select class="block border-gray-300 rounded-lg w-full focus:ring-gray-300">
@@ -90,14 +92,16 @@
                     <label class="block text-gray-500 mb-1">Email Address</label>
                     <input type="email" name="email" class="block border-gray-300 rounded-lg w-full focus:ring-gray-300">
         </div>
-         <div class="mb-3">
+        <div class="flex flex-col md:flex-row mb-3 space-x-2">
+         <div class="mb-3 w-full">
                     <label class="block text-gray-500 mb-1">Password</label>
                     <input type="password" name="password" class="block border-gray-300 rounded-lg w-full focus:ring-gray-300">
         </div>
-         <div class="mb-3">
+         <div class="mb-3 w-full">
                     <label class="block text-gray-500 mb-1">Retype Password</label>
                     <input type="password" name="rpassword" class="block border-gray-300 rounded-lg w-full focus:ring-gray-300">
         </div>
+    </div>
     <div class="mb-3 mt-4">
         <button class="bg-blue-500 text-white p-2 py-3 w-full rounded-lg hover:bg-blue-800">Create an account <i class="fa fa-arrow"></i></button>
     </div>
@@ -107,6 +111,15 @@
             Image here
         </div>
     </div>
-   
+   <footer>
+    <hr>
+       <div class="flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+      <p>&copy; 2025 Bellah Options. All rights reserved.</p>
+      <div class="flex space-x-4 mt-2 md:mt-0">
+        <a href="#" class="hover:text-indigo-600 transition">Privacy Policy</a>
+        <a href="#" class="hover:text-indigo-600 transition">Terms of Service</a>
+      </div>
+    </div>
+   </footer>
 </body>
 </html>

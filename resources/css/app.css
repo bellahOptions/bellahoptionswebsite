@@ -4,9 +4,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@theme {
+  --color-bellah: #000845;
+}
+
 *{
 	font-family: "Bricolage Grotesque", sans-serif;
 }
+#bellah-logo{
+  width: 100px; 
+  height: auto;
+  }
+  #wwa, #Impact{
+    background: #000845;
+  }
+  #her-btn{
+    background: #000845;
+  }
 
 /* -- keyframes -- */
   @keyframes fadeInUp { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none} }

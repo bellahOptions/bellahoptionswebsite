@@ -2,20 +2,21 @@
 
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BellahController;
+use App\Http\Controllers\ContactController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', [BellahController::class, 'ShowHome'])->name('home');
+Route::get('/404', function () {
+    return view('errors.503');
 });
-Route::get('/welcome', function () {
-    return view('home');
-});
+
 
 Route::get('/about-bellah-options', [BellahController::class, 'ShowAbout'])->name('about');
 Route::get('/bellah-options-services', [BellahController::class, 'ShowServices'])->name('services');
 Route::get('/work-with-bellah-options', [BellahController::class, 'ShowCareers'])->name('careers');
 Route::get('/contact-bellah-options', [BellahController::class, 'ShowContact'])->name('contact');
 
+Route::post('/contact', [ContactController::class, 'StoreContact'])->name('contact.save');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

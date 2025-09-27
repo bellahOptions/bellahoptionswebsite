@@ -10,6 +10,10 @@ class BellahController extends Controller
     {
     	return view('about');
     }
+    public function ShowHome()
+    {
+        return view('home');
+    }
     public function ShowServices()
     {
     	return view('services');
