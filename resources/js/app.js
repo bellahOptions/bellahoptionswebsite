@@ -43,3 +43,11 @@ Alpine.start();
 
     counters.forEach((counter) => observer.observe(counter));
   });
+  $(document).ready(function(){
+    $('#menu-toggle').click(function(){
+      $('#mobile-menu').show();
+    })
+    $('mobile-menu').mouseleave(function(){
+      $('#mobile-menu').hide();
+    })
+  })

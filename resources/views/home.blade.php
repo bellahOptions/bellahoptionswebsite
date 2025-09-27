@@ -3,8 +3,13 @@
 @section('main')
 <div class="max-w-7xl mx-auto px-6 lg:px-20">
 
+<style type="text/css">
+  @media (max-width: 480px){
+ 
+}
+</style>
   <!-- HERO -->
-  <div id="her" class="my-5 lg:my-20 p-5 lg:p-20 text-center">
+  <div id="her" class="my-5 mt-10 lg:mt-20 lg:mb-8 p-5 lg:p-10 lg:px-5 text-center">
     <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 text-gray-700">
       Design. Technology. Growth.
     </h1>
@@ -28,11 +33,8 @@
 
     <small class="block text-sm text-gray-500 mt-3">Africa is the new economic super power</small>
   </div>
-
   <!-- PRODUCTS / LOGO STRIP -->
-  <section id="products" class="py-12">
-    <h2 class="text-center text-2xl font-semibold mb-8 text-gray-700">Our Products</h2>
-
+  <section id="products" class="py-12">    
     <div class="overflow-hidden">
       <div class="flex items-center space-x-12 md:space-x-20 animate-scroll">
         <!-- Duplicate logos twice for seamless loop -->
@@ -202,9 +204,9 @@
       </p>
     </div>
   </section>
-
+</div>
   <!-- FINAL CTA -->
-  <section class="py-16 bg-sky-50 reveal hover-glow">
+  <section class="py-10 px-12 bg-sky-50 reveal hover-glow">
     <div class="max-w-4xl mx-auto text-center">
       <h3 class="text-2xl md:text-3xl font-bold text-gray-800">Whether You're Ready to Build Your Brand or Invest in Ours — Let's Talk.</h3>
       <div class="flex flex-col sm:flex-row justify-center gap-4 mt-6">
@@ -213,8 +215,6 @@
       </div>
     </div>
   </section>
-
-</div>
 
 <!-- Animations & helper styles (kept as before) -->
 <style>

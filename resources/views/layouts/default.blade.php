@@ -48,11 +48,7 @@
 </head>
 
 <body class="font-sans">
-
-<button id="theme-toggle" class="theme-btn">
-    🌙
-</button>
-        <header class="w-full fixed top-0 left-0  backdrop-blur-md">
+  <header class="w-full">
   <div class="backdrop shadow-md">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between h-16">
@@ -78,8 +74,6 @@
           <a href="{{ route('login')}}" class="hidden md:inline-block px-3 py-1 rounded-md border border-indigo-600 text-indigo-600 fade-in-up delay-500">Login</a>
           <a href="{{ route('register')}}" class="hidden md:inline-block px-3 py-1 rounded-md bg-indigo-600 text-white shadow-sm hover:brightness-95 transform transition fade-in-up delay-600">Sign Up</a>
 
-          <!-- theme toggle -->
-          <button id="theme-toggle" class="p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition fade-in-up delay-400" aria-label="Toggle theme">🌙</button>
 
           <!-- mobile menu button -->
           <button id="menu-toggle" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-gray-100 transition" aria-controls="mobile-menu" aria-expanded="false">

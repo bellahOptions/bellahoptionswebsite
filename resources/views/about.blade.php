@@ -6,7 +6,7 @@
 		color: #3E3E3E;
 	}
 </style>
-<section class="py-16 my-20 overflow-clip px-6 md:px-12 lg:px-20 lg:py-30">
+<section class="py-16  overflow-clip px-6 md:px-12 lg:px-20 lg:py-30">
   <!-- Page Title -->
   <div class="text-center mb-20" data-aos="fade-up">
     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-600">
