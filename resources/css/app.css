@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+	font-family: "Bricolage Grotesque", sans-serif;
+}
+
+/* -- keyframes -- */
+  @keyframes fadeInUp { from{opacity:0; transform:translateY(10px)} to{opacity:1; transform:none} }
+  @keyframes fadeInLeft { from{opacity:0; transform:translateX(-10px)} to{opacity:1; transform:none} }
+  @keyframes fadeInRight { from{opacity:0; transform:translateX(10px)} to{opacity:1; transform:none} }
+  @keyframes fadeOutUp { from{opacity:1; transform:none} to{opacity:0; transform:translateY(-8px)} }
+
+  /* -- utility animation classes (apply alongside Tailwind classes) -- */
+  .fade-in-up { animation: fadeInUp .55s cubic-bezier(.22,.9,.36,1) forwards; opacity: 0; }
+  .fade-in-left { animation: fadeInLeft .55s cubic-bezier(.22,.9,.36,1) forwards; opacity: 0; }
+  .fade-in-right { animation: fadeInRight .55s cubic-bezier(.22,.9,.36,1) forwards; opacity: 0; }
+  .fade-out-up { animation: fadeOutUp .2s ease forwards; }
+
+  /* delays */
+  .delay-100{ animation-delay:.08s } .delay-200{ animation-delay:.18s }
+  .delay-300{ animation-delay:.28s } .delay-400{ animation-delay:.38s }
+  .delay-500{ animation-delay:.48s } .delay-600{ animation-delay:.58s }
+
+  /* mobile menu enter/exit helpers (we toggle hidden and these classes in JS) */
+  .menu-enter { opacity:0; transform:translateY(-6px); animation: fadeInUp .22s ease forwards; }
+  .menu-exit { animation: fadeOutUp .18s ease forwards; }
+
+  /* small visual helpers */
+  header.backdrop { background-color: rgba(255,255,255,.88); backdrop-filter: blur(6px); }
+  html.dark header.backdrop { background-color: rgba(17,24,39,.86); }
+
+  #products{
+    margin: 20px auto !important;
+  }
+  #her{
+    margin-bottom: 20px !important;
+  }
+  #wwa{
+    margin: 20px auto;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 480px){
+     #her{
+    margin: 80px auto 20px auto!important;
+  }
+  }
